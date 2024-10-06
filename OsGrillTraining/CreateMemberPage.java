@@ -1,4 +1,5 @@
 package OsGrillTraining;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -7,17 +8,23 @@ import javax.swing.*;
 public class CreateMemberPage implements ActionListener
 {
 	JFrame frame = new JFrame();
-	JButton loginButton = new JButton("Login");
+	
+  JButton loginButton = new JButton("Login");
 	JButton resetButton = new JButton("Reset");
-	JTextField userIDField = new JTextField();
+	
+  JTextField userIDField = new JTextField();
 	JPasswordField userPasswordField = new JPasswordField();
-	JLabel userIDLabel = new JLabel("userID:");
+	
+  JLabel userIDLabel = new JLabel("userID:");
 	JLabel userPasswordLabel = new JLabel("password:");
 	JLabel messageLabel = new JLabel();
-	HashMap<String,String> newMemberInfo = new HashMap<String,String>();
-	String userID;
+	
+  HashMap<String,String> newMemberInfo = new HashMap<String,String>();
+	
+  String userID;
 	String password;
-	IDandPasswords x = new IDandPasswords();
+	
+  IDandPasswords x = new IDandPasswords();
 	
 	CreateMemberPage(HashMap<String,String> newMemberInfoOriginal)
 	{
